@@ -1,36 +1,57 @@
 /************************/
 /********FORM***********/
-.contact {
+
+.contact-section {
   display: flex;
+  gap: 2rem;
+  align-items: center;
   justify-content: center;
 }
 
-.contact > div:first-child {
-  background-color: navy;
+.contact {
+  border-radius: 1rem;
+  background-color: #fff;
   margin-top: 12rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  /* width: 40%; */
-  border-radius: 1rem;
+  gap: 2rem;
+  box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.521);
+  /* align-items: center;
+  justify-content: center; */
+  /* padding: 2rem; */
+  width: 45%;
 }
 
-.contact h2 {
-  font-weight: 600;
+.icons {
+  /* padding: 1rem 0 0 3rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+  background-color: #111121;
 }
-.form-section {
-  /* background-color: brown; */
-  /* margin-top: 12rem; */
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-content: center;
-  align-items: flex-start;
-  /* padding: 2rem; */
-  /* gap: 1rem; */
-  /* width: 40%; */
-  border-radius: 1rem;
+
+.icons ion-icon {
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icons ion-icon:hover {
+  transform: scale(1.5);
+}
+
+.form {
+  padding: 2rem;
+  width: 80%;
+}
+
+.form h2 {
+  text-align: center;
+  color: #111121;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 form {
@@ -38,15 +59,16 @@ form {
   flex-direction: column;
 }
 
-.form-section form label {
-  font-size: 1.8rem;
+.form form label {
+  font-size: 2rem;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
-.form-section form input,
-.form-section form textarea {
+.form form input,
+.form form textarea {
   font-family: "DM Mono", monospace, sans-serif;
-  width: 80%;
+  width: 95%;
   padding: 12px 5px;
   font-size: 1.6rem;
   margin: 0 0 2rem 0;
@@ -55,31 +77,27 @@ form {
   border-radius: 4px;
 }
 
-.form-section form input:focus,
-.form-section form textarea:focus {
+.form form input:focus,
+.form form textarea:focus {
   outline: none;
-  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.form-section form input[type="submit"]:hover {
-  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+.form form input[type="submit"] {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #6e6e6e;
+  transition: all 0.3s;
 }
 
-.form-section form input[type="submit"]:active {
+.form form input[type="submit"]:hover {
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+  background-color: #111121;
+}
+
+.form form input[type="submit"]:active {
   transform: translateY(1px);
   box-shadow: none;
-}
-
-.contact-icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 8.4rem;
-  column-gap: 2rem;
-  padding: 3.6rem 0 1rem 5rem;
-  background-color: blueviolet;
-}
-
-.contact-icons ion-icon {
-  font-size: 5.4rem;
-  color: white;
 }
