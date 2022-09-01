@@ -22,20 +22,25 @@
     <link rel="stylesheet" href="./Assets/CSS/home.css" />
     <link rel="stylesheet" href="./Assets/CSS/about.css" />
     <link rel="stylesheet" href="./Assets/CSS/portfolio.css" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="./Assets/CSS/form.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./Assets/Images/t- logo.png" type="image/x-icon" />
+
+    <title>Tubolayefa</title>
   </head>
-  <body>
-    <section class="home">
+  <body class="sticky">
+    <section class="home" id="#home">
       <header>
         <!-- <div class="logo">T</div> -->
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <!-- <li><a href="#">Services</a></li> -->
             <li>
-              <a href="#"><button class="btn">Contact</button></a>
+              <a href="#contact"><button class="btn">Contact</button></a>
             </li>
           </ul>
         </nav>
@@ -43,7 +48,7 @@
       <div class="hero container">
         <div class="hero-content">
           <p>
-            Hi, there I'm<br />
+            Hi there, I'm<br />
             <span>a web developer </span>
           </p>
           <a href="#">
@@ -53,7 +58,7 @@
         </div>
       </div>
     </section>
-    <section class="about container">
+    <section class="about container" id="about">
       <h2>ABOUT ME</h2>
       <div>
         <p>
@@ -71,19 +76,69 @@
         </p>
       </div>
     </section>
-    <section class="portfolio container">
+    <section class="portfolio container" id="portfolio">
       <h2>PORTFOLIO</h2>
       <div class="works">
-        <div>Pig Game</div>
-        <div>Precious Pots</div>
-        <div>To DO Lsit</div>
-        <div>Google Clone (With Dark Mode)</div>
-        <div>Food Recipe</div>
-        <div>Jubilee Hotel</div>
+        <div>
+          <ion-icon size="large" name="logo-github"></ion-icon>Pig Game
+          <ion-icon name="game-controller-outline"></ion-icon>
+        </div>
+        <div>
+          <ion-icon size="large" name="logo-github"></ion-icon>To DO
+          Lsit<ion-icon name="list-outline"></ion-icon>
+        </div>
+        <div>
+          <ion-icon size="large" name="logo-github"></ion-icon>Precious Pots
+          <ion-icon name="fast-food-outline"></ion-icon>
+        </div>
+        <div>
+          <ion-icon size="large" name="logo-github"></ion-icon>Google Clone
+          (With Dark Mode)<ion-icon name="logo-google"></ion-icon>
+        </div>
+        <div>
+          <ion-icon size="large" name="logo-github"></ion-icon>Food Recipe
+          <ion-icon name="fast-food-outline"></ion-icon>
+        </div>
+        <div>
+          <ion-icon size="large" name="logo-github"></ion-icon>Jubilee Hotel
+        </div>
       </div>
     </section>
     <!-- <section class="services">Service</section> -->
-    <section class="contact">Contact<div>
+    <section class="contact container" id="contact">
+      <form>
+        <h2>CONTACT</h2>
+        <label for="name">Name</label>
+        <input type="text" placeholder="John Smith" />
+        <label for="email">Email</label>
+        <input type="text" placeholder="johnsmith@example.com" />
+        <label for="message">Message</label>
+        <textarea
+          id=""
+          name=""
+          rows="4"
+          cols="50"
+          placeholder="Enter message"
+        ></textarea>
+      </form>
+      <div>
+        <ion-icon name="logo-github"></ion-icon>
+        <ion-icon name="git-branch-outline"></ion-icon>
+
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </div>
     </section>
+    <script src="./Assets/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

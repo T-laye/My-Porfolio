@@ -1,0 +1,11 @@
+/************************/
+/********FORM***********/
+form {
+  background-color: navy;
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
