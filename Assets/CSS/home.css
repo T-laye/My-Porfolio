@@ -1,11 +1,11 @@
 /*************************/
 /*******Header***********/
 .home {
-  height: 90vh;
+  height: 100vh;
   /* background-color: black; */
   /* background-color: #deb887; */
   /* background-color: #16120d; */
-  color: #f8f1e7;
+  color: #fff;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
 
 nav {
   margin-top: 2rem;
-  width: 50%;
+  width: 10%;
 }
 
 nav ul {
@@ -39,7 +39,7 @@ nav ul a {
   /* font-family: "DM Mono", monospace, sans-serif; */
   font-weight: 500;
   font-size: 2rem;
-  color: #f8f1e7;
+  color: #fff;
   letter-spacing: 1px;
 }
 
@@ -53,32 +53,56 @@ a .btn {
   padding: 1rem 2.5rem;
   background: none;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 0px 2px rgba(255, 255, 255, 1);
   transition: all 0.2s;
   cursor: pointer;
   letter-spacing: 0.5px;
-  color: #f8f1e7;
+  color: #fff;
 }
 
 .btn:hover {
   background-color: #deb887;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+  color: #111121;
+}
+
+a .btn-hire {
+  background-color: #fff;
+  color: #111121;
+  box-shadow: none;
+  /* padding: 1.1rem 2.5rem; */
+  transition: all 0.2s;
+  box-shadow: 0 0 0px 2px rgba(255, 255, 255, 1);
+}
+
+/* a .btn-hire:hover {
+  background: none;
+  color: #fff;
+  box-shadow: none;
+  padding: 1.1rem 2.5rem;
+} */
+
+a .btn-hire:active,
+.btn:active {
+  transform: translateY(1px);
 }
 
 .hero {
   display: flex;
   /* justify-content: flex-end; */
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 5%;
   height: 90%;
   /* background-color: aquamarine; */
 }
 
 .hero-content {
-  padding: 5rem;
+  /* padding: 2rem; */
+  /* background-color: pink; */
+  width: 50%;
 }
 
 .hero p {
@@ -88,6 +112,7 @@ a .btn {
 }
 
 .hero p span {
+  display: inline-block;
   font-family: "Noto Sans Display", sans-serif;
   font-size: 4.2rem;
   font-weight: 600;
@@ -109,7 +134,7 @@ a .btn {
   height: 6rem;
   padding-top: 0;
   padding-bottom: 2rem;
-  background-color: rgba(22, 22, 22, 0.6);
+  background-color: #111121ce;
   z-index: 100;
   justify-content: flex-end;
   /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0.03); */

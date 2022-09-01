@@ -2,14 +2,14 @@
 /******ABOUT***********/
 
 .about {
-  height: 50vh;
+  height: 70vh;
   /* background-color: red; */
   color: #f8f1e7;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  padding: 12rem;
+  padding: 0 12rem;
   gap: 2rem;
 }
 
