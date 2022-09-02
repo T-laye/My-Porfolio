@@ -17,25 +17,31 @@
     />
 
     <!-- Styles -->
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="./Assets/CSS/all.min.css" />
     <link rel="stylesheet" href="./Assets/CSS/global.css" />
     <link rel="stylesheet" href="./Assets/CSS/home.css" />
     <link rel="stylesheet" href="./Assets/CSS/about.css" />
     <link rel="stylesheet" href="./Assets/CSS/portfolio.css" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="./Assets/CSS/contact.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./Assets/Images/t- logo.png" type="image/x-icon" />
+
+    <title>Tubolayefa</title>
   </head>
-  <body>
-    <section class="home">
+  <body class="sticky">
+    <section class="home" id="home">
       <header>
         <!-- <div class="logo">T</div> -->
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <!-- <li><a href="#">Services</a></li> -->
             <li>
-              <a href="#"><button class="btn">Contact</button></a>
+              <a href="#contact"><button class="btn">Contact</button></a>
             </li>
           </ul>
         </nav>
@@ -43,8 +49,8 @@
       <div class="hero container">
         <div class="hero-content">
           <p>
-            Hi, there I'm<br />
-            <span>a web developer </span>
+            Hi there, I'm<br />
+            <span class="input"></span> 
           </p>
           <a href="#">
             <button class="btn btn-hire">Hire Me</button>
@@ -53,37 +59,141 @@
         </div>
       </div>
     </section>
-    <section class="about container">
+    <section class="about container" id="about">
       <h2>ABOUT ME</h2>
       <div>
         <p>
           My experience integrating with other team members including feedback
-          has indicated that I have an excellent reputation for solving problems
-          and improving client satisfaction and that me being too fun to work
-          with. My mantra and what motivates me most with how I do my work has
-          been “Curiosity and Perseverance”, which has guided me to be where I
+          has indicated that I have an excellent reputation for  <span>solving problems</span>  
+          and <span>improving client satisfaction</span> and that me being too fun to work
+          with. <br> <br> My mantra and what motivates me most with how I do my work has
+          been <span>“Curiosity and Perseverance”</span>, which has guided me to be where I
           am today.
-          <br />
-          I'm eager to contribute to the team’s success through hard work,
+          <br /> <br>
+          I'm eager to contribute to the team’s success through <span>hard work,
           attention to detail and organizational skills with a clear
-          understanding of tasks and training; motivated to grow, learn and
+          understanding of tasks and training; motivated to grow, learn</span>  and
           excel in all ramifications.
         </p>
       </div>
     </section>
-    <section class="portfolio container">
+    <section class="portfolio container" id="portfolio">
       <h2>PORTFOLIO</h2>
       <div class="works">
-        <div>Pig Game</div>
-        <div>Precious Pots</div>
-        <div>To DO Lsit</div>
-        <div>Google Clone (With Dark Mode)</div>
-        <div>Food Recipe</div>
-        <div>Jubilee Hotel</div>
-      </div>
-    </section>
+        <div class="work">
+          <!-- Pig Game -->
+          <div class="work-title">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+            <h3>Pig Game</h3>
+          </div>
+          <p>
+            A two player guessing game. If any rolls a forbidden number, the player loses his turn and the unheld score becomes zero.   
+          </p>
+          <ion-icon size="large" name="game-controller-outline"></ion-icon>
+        </div>
+        <div class="work">
+          <!-- To DO List -->
+          <div class="work-title">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+            <h3>To Do List</h3>
+          </div>
+          <p>
+            A task 
+          </p>
+          <ion-icon size="large" name="list-outline"></ion-icon>
+        </div>
+        <div class="work">
+          <!-- Precious Pot -->
+          <div class="work-title">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+            <h3>Precious Pots</h3>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum
+          </p>
+          <ion-icon size="large" name="fast-food-outline"></ion-icon>
+        </div>
+        <div class="work">
+          <!-- Google Clone -->
+          <div class="work-title">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+            <h3>Google Clone</h3>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum
+          </p>
+          <ion-icon size="large" name="logo-google"></ion-icon>
+        </div>
+        <div class="work">
+          <!-- African Recipe's -->
+          <div class="work-title">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+            <h3>Food Recipe</h3>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum
+          </p>
+          <ion-icon size="large" name="fast-food-outline"></ion-icon>
+        </div>
+        <div class="work">
+          <div class="work-title">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+            <h3>Jubilee Hotel</h3>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum
+          </p>
+          <ion-icon size="large" name="bed-outline"></ion-icon>
+        </div>
+      </section>
     <!-- <section class="services">Service</section> -->
-    <section class="contact">Contact<div>
+
+    <section class="contact contain" id="contact">
+        <div class="icons">
+          <a href="">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+          </a>
+          <a href="">
+            <ion-icon size="large" name="logo-whatsapp"></ion-icon>
+          </a>
+          <a href="">
+            <ion-icon size="large" name="mail-outline"></ion-icon>
+          </a>
+          <a href="">
+            <ion-icon size="large" name="logo-twitter"></ion-icon>
+          </a>
+          <a href="">
+            <ion-icon size="large" name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="">
+            <ion-icon size="large" name="logo-facebook"></ion-icon>
+          </a>
+        </div>
+        <a href="#">
+          <div class="footname"><ion-icon size="large" name="git-branch-outline"></ion-icon>T_laye</div>
+        </a>
     </section>
+    <script src="./Assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    ;
+    <script>
+      let typed = new Typed(".input", {
+        strings: [
+          "Tiebebedigha Tubolayefa",
+          "a Web Developer. ",
+        ],
+        typeSpeed: 110,
+        backSpeed: 30,
+        loop: true,
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
