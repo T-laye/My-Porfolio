@@ -108,12 +108,13 @@ a .btn {
 .btn:hover {
   background-color: #deb887;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0);
-  color: #111121;
+  /* color: #111121; */
 }
 
-a .btn-hire {
+a btn-hire {
   background-color: #e7e7e7;
   color: #0d0d0d;
+
   box-shadow: none;
   /* padding: 1.1rem 2.5rem; */
   transition: all 0.2s;
