@@ -23,11 +23,13 @@
 
 .icons ion-icon {
   font-size: 3.6rem;
-  color: #e7e7e7;
+  color: #6e6e6e;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
-.icons ion-icon:hover {
+.icons ion-icon:hover,
+.icons ion-icon:active {
   transform: scale(1.5);
   color: burlywood;
 }
@@ -43,6 +45,7 @@
   cursor: pointer;
 }
 
-.footname:hover {
-  color: #e7e7e7;
+.footname:hover,
+.footname:active {
+  color: burlywood;
 }
