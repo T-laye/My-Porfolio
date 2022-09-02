@@ -30,17 +30,27 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 30rem;
   width: 25rem;
-  /* background-color: black; */
   border-radius: 1rem;
-  /* border: 0.1px solid black; */
   padding: 1rem;
-  color: #b6b6b6;
   transition: all 0.5s;
   /* box-shadow: 0 0 0px 0.5px rgba(255, 255, 255, 1); */
   box-shadow: 0 0px 0px 0.5px rgba(0, 0, 0, 1);
+}
+
+.work-title {
+  display: flex;
+  gap: 1rem;
+  color: #b6b6b6;
+  align-items: center;
+  margin-bottom: 2rem;
+  /* justify-content: center; */
+}
+
+.work ion-icon {
+  color: #b6b6b6;
 }
 
 .work p {
@@ -49,7 +59,8 @@
   color: #cfcfcf;
 }
 
-.work:hover h3 {
+.work:hover h3,
+.work:hover ion-icon {
   color: burlywood;
 }
 
@@ -59,8 +70,6 @@
   color: burlywood;
 }
 
-.work-title {
-  display: flex;
-  gap: 1rem;
-  /* justify-content: ; */
+.work a ion-icon:hover {
+  transform: scale(1.2);
 }
