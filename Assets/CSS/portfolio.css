@@ -15,7 +15,7 @@
 }
 
 .portfolio h3 {
-  color: #e7e7e9;
+  color: #6e6e6e;
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: 500;
@@ -43,14 +43,15 @@
 .work-title {
   display: flex;
   gap: 1rem;
-  color: #b6b6b6;
+  color: #6e6e6e;
   align-items: center;
   margin-bottom: 2rem;
   /* justify-content: center; */
 }
 
 .work ion-icon {
-  color: #b6b6b6;
+  color: #6e6e6e;
+  transition: all 0.3s;
 }
 
 .work p {
@@ -70,6 +71,7 @@
   color: burlywood;
 }
 
-.work a ion-icon:hover {
+.work a ion-icon:hover,
+.work a ion-icon:active {
   transform: scale(1.2);
 }
