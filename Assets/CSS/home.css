@@ -6,9 +6,6 @@
   /* background-color: #deb887; */
   /* background-color: #16120d; */
   /* color: #fff; */
-}
-
-.home {
   content: "";
   background-image: url("../Images/tianyi-ma-WiONHd_zYI4-unsplash.jpg");
   background-position: top;
@@ -16,7 +13,14 @@
   background-size: calc(115%);
   width: 100%;
   height: 100vh;
+  /* opacity: 0; */
+  /* transition: all 1s ease-in;
+  transition: all 3s ease-out; */
 }
+
+/* .home:hover {
+  opacity: 1;
+} */
 
 .hero {
   display: flex;
@@ -65,8 +69,12 @@ header {
 }
 
 nav {
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: purple; */
   margin-top: 2rem;
-  width: 10%;
+  width: 100%;
+  gap: 2rem;
 }
 
 nav ul {
@@ -105,20 +113,11 @@ a .btn {
   color: #e7e7e7;
 }
 
-.btn:hover {
+.btn:hover,
+a .btn-hire:hover {
   background-color: #deb887;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0);
-  /* color: #111121; */
-}
-
-a btn-hire {
-  background-color: #e7e7e7;
-  color: #0d0d0d;
-
-  box-shadow: none;
-  /* padding: 1.1rem 2.5rem; */
-  transition: all 0.2s;
-  box-shadow: 0 0 0px 2px #e7e7e7ff;
+  color: #111121;
 }
 
 a .btn-hire:active,
@@ -151,4 +150,15 @@ a .btn-hire:active,
 
 .sticker .hero {
   margin-top: 4rem;
+}
+
+header div ion-icon {
+  color: #fff;
+  margin-top: -1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+header div ion-icon:hover {
+  color: burlywood;
 }

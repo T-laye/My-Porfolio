@@ -6,10 +6,8 @@
   display: flex;
   gap: 5rem;
   flex-direction: column;
-  /* box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.521); */
   align-items: center;
   justify-content: center;
-  /* padding: 2rem; */
   width: 100%;
   background-color: #0d0d0d;
 }
