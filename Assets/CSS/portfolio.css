@@ -24,6 +24,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
+  padding: 0 2rem;
 }
 
 .works .work {
@@ -60,18 +61,39 @@
   color: #cfcfcf;
 }
 
-.work:hover h3,
-.work:hover ion-icon {
-  color: burlywood;
-}
-
 .work:hover {
   border: 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.521);
   color: burlywood;
 }
 
-.work a ion-icon:hover,
-.work a ion-icon:active {
-  transform: scale(1.2);
+.work .checkout {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.work .checkout span {
+  visibility: hidden;
+  color: #6e6e6e;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.work:hover h3,
+.work:hover ion-icon,
+.work:hover .checkout span {
+  color: burlywood;
+}
+
+.work:hover .checkout span {
+  visibility: visible;
+}
+
+.checkout span:hover {
+  transform: scale(1.1);
+}
+
+.work .checkout:hover .checkout-icon {
+  transform: scale(1.1);
 }
