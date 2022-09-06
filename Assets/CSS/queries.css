@@ -1,0 +1,80 @@
+/****************************
+        BELOW 1200px
+******************************/
+@media screen and (max-width: 66rem) {
+  html {
+    font-size: 50%;
+  }
+  .about p {
+    font-size: 1.8rem;
+  }
+}
+
+/****************************
+        BELOW 990px
+******************************/
+@media screen and (max-width: 62rem) {
+  .home {
+    background-size: calc(130%);
+  }
+}
+
+/****************************
+        BELOW 950px for Phones
+******************************/
+@media screen and (max-width: 60rem) {
+  header {
+    /* background-color: blueviolet; */
+  }
+  nav ul {
+    display: none;
+  }
+  .hero p {
+    margin-top: 0;
+  }
+
+  .hidden {
+    display: block;
+  }
+}
+
+/****************************
+        BELOW 880px
+******************************/
+@media screen and (max-width: 55rem) {
+  .home {
+    background-size: calc(140%);
+  }
+}
+
+/****************************
+        BELOW 815px
+******************************/
+@media screen and (max-width: 51rem) {
+  .home {
+    background-size: calc(155%);
+  }
+}
+
+/****************************
+        BELOW 740px
+******************************/
+@media screen and (max-width: 46rem) {
+  .home {
+    background-size: calc(170%);
+  }
+}
+
+/****************************
+        BELOW 680px
+******************************/
+@media screen and (max-width: 43rem) {
+  .home {
+    background-size: calc(190%);
+  }
+  .works {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+}
