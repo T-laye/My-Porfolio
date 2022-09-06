@@ -6,7 +6,6 @@
   /* background-color: #deb887; */
   /* background-color: #16120d; */
   /* color: #fff; */
-  content: "";
   background-image: url("../Images/tianyi-ma-WiONHd_zYI4-unsplash.jpg");
   background-position: top;
   background-repeat: no-repeat;
@@ -128,6 +127,10 @@ a .btn-hire:active,
 .btn-resume {
   margin-top: 2rem;
   margin-right: 2rem;
+}
+
+.btn-resume {
+  display: none;
 }
 
 /* ***Sticky Navigationn***/

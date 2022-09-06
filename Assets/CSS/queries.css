@@ -69,12 +69,137 @@
         BELOW 680px
 ******************************/
 @media screen and (max-width: 43rem) {
+  html {
+    font-size: 45%;
+  }
   .home {
-    background-size: calc(190%);
+    background-size: calc(160%);
   }
   .works {
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    padding: 0 2rem;
+  }
+
+  .icons ion-icon {
+    font-size: 1rem;
+  }
+}
+
+/****************************
+        BELOW 630px
+******************************/
+@media screen and (max-width: 40rem) {
+  .home {
+    background-size: calc(190%);
+  }
+  .about {
+    padding: 0 6rem;
+  }
+}
+
+/****************************
+        BELOW 540px
+******************************/
+@media screen and (max-width: 34rem) {
+  .home {
+    background-size: calc(240%);
+  }
+  .hero p {
+    margin-top: 7%;
+  }
+  .icons {
+    width: 70%;
+  }
+}
+
+/****************************
+BELOW 430px
+******************************/
+@media screen and (max-width: 28rem) {
+  .home {
+    background-size: calc(290%);
+  }
+  .icons {
+    width: 100%;
+  }
+}
+
+/****************************
+        BELOW 415px
+******************************/
+@media screen and (max-width: 26rem) {
+  .works {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+/****************************
+        BELOW 390px
+******************************/
+@media screen and (max-width: 24rem) {
+  .home {
+    background-size: cover;
+    height: 90vh;
+  }
+
+  .hero {
+    margin-top: 0;
+  }
+
+  .hero-content {
+    width: 100%;
+    gap: 30rem;
+  }
+
+  .hero p {
+    line-height: 1.5;
+  }
+  .hero p span {
+    font-size: 3.6rem;
+  }
+
+  .about {
+    margin-top: 1.2rem;
+  }
+
+  .btn-resume {
+    display: inline-block;
+  }
+}
+
+/****************************
+BELOW 350px
+******************************/
+@media screen and (max-width: 22rem) {
+  .hero p span {
+    font-size: 3rem;
+  }
+}
+
+/****************************
+BELOW 280px
+******************************/
+@media screen and (max-width: 18rem) {
+  .hero-content {
+    gap: 40rem;
+  }
+  .hero {
+    margin-top: 10%;
+  }
+
+  .hero p span {
+    font-size: 2.4rem;
+  }
+
+  .about p {
+    font-size: 1.6rem;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 2rem;
   }
 }
