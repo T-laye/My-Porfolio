@@ -59,6 +59,7 @@
   font-size: 1.6rem;
   padding: 5px 1rem;
   color: #cfcfcf;
+  line-height: 1.5;
 }
 
 .work:hover {
@@ -70,7 +71,9 @@
 .work .checkout {
   display: flex;
   align-items: center;
+  font-weight: 500;
   gap: 1.6rem;
+  font-family: "DM Mono", monospace, sans-serif;
 }
 
 .work .checkout span {
