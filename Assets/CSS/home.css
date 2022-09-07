@@ -25,7 +25,7 @@
 .hero p {
   text-align: center;
   font-size: 2rem;
-  margin-top: 4%;
+  /* margin-top: 4%; */
   color: #e7e7e7;
 }
 
@@ -120,8 +120,10 @@ a .btn-hire:active,
   margin-top: 2.4rem;
 }
 
-.btn-resume {
+a .btn-resume {
   display: none;
+  color: #6e6e6e;
+  box-shadow: 0 0 0px 2px #6e6e6eff;
 }
 
 /* ***Sticky Navigationn***/

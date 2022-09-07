@@ -9,7 +9,7 @@
     font-size: 1.8rem;
   }
 }
-
+/* 56667246 */
 /****************************
         BELOW 950px for Phones
 ******************************/
@@ -47,9 +47,11 @@
     gap: 2rem;
   }
 
-  .btn-resume,
-  .btn-hire {
+  a .btn-resume,
+  a .btn-hire {
     display: inline-block;
+    font-weight: 600;
+    font-size: 2.4rem;
   }
 
   .hero p span {
@@ -137,6 +139,7 @@ BELOW 430px
   .cta-btn {
     flex-direction: column;
     margin-top: 2rem;
+    gap: 1rem;
   }
 }
 
