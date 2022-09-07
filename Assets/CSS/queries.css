@@ -1,33 +1,35 @@
 /****************************
-        BELOW 1200px
+        BELOW 1050px
 ******************************/
 @media screen and (max-width: 66rem) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
   .about p {
     font-size: 1.8rem;
   }
 }
-
-/****************************
-        BELOW 990px
-******************************/
-@media screen and (max-width: 62rem) {
-  .home {
-    background-size: calc(130%);
-  }
-}
-
+/* 56667246 */
 /****************************
         BELOW 950px for Phones
 ******************************/
 @media screen and (max-width: 60rem) {
+  .cta-btn {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .btn-resume,
+  .btn-hire {
+    display: inline-block;
+  }
+
   nav ul {
     display: none;
   }
-  .hero p {
-    margin-top: 0;
+  .hero-content {
+    margin-top: 2rem;
   }
 
   .hidden {
@@ -39,17 +41,21 @@
         BELOW 880px
 ******************************/
 @media screen and (max-width: 55rem) {
-  .home {
-    background-size: calc(140%);
+  .cta-btn {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
   }
-}
 
-/****************************
-        BELOW 815px
-******************************/
-@media screen and (max-width: 51rem) {
-  .home {
-    background-size: calc(155%);
+  a .btn-resume,
+  a .btn-hire {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+
+  .hero p span {
+    font-size: 4.6rem;
   }
 }
 
@@ -57,8 +63,8 @@
         BELOW 740px
 ******************************/
 @media screen and (max-width: 46rem) {
-  .home {
-    background-size: calc(170%);
+  .works {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -66,18 +72,12 @@
         BELOW 680px
 ******************************/
 @media screen and (max-width: 43rem) {
-  html {
-    font-size: 45%;
-  }
-  .home {
-    background-size: calc(160%);
-  }
-  .works {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .icons ion-icon {
     font-size: 1rem;
+  }
+
+  .hero-content {
+    margin-top: 8%;
   }
 }
 
@@ -85,9 +85,6 @@
         BELOW 630px
 ******************************/
 @media screen and (max-width: 40rem) {
-  .home {
-    background-size: calc(190%);
-  }
   .about {
     padding: 0 6rem;
   }
@@ -97,14 +94,37 @@
         BELOW 540px
 ******************************/
 @media screen and (max-width: 34rem) {
-  .home {
-    background-size: calc(240%);
-  }
-  .hero p {
-    margin-top: 7%;
-  }
   .icons {
     width: 70%;
+  }
+
+  .hero p span {
+    font-size: 3.6rem;
+  }
+}
+
+/****************************
+BELOW 490px
+******************************/
+@media screen and (max-width: 31rem) {
+  .works {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .works .work {
+    height: 50rem;
+    width: 80vw;
+    padding: 2rem 4rem;
+  }
+
+  .work .work-title h3 {
+    font-size: 2.8rem;
+    margin-left: 1rem;
+  }
+  .works .work p {
+    font-size: 2rem;
   }
 }
 
@@ -112,11 +132,14 @@
 BELOW 430px
 ******************************/
 @media screen and (max-width: 28rem) {
-  .home {
-    background-size: calc(290%);
-  }
   .icons {
     width: 100%;
+  }
+
+  .cta-btn {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
   }
 }
 
@@ -124,45 +147,19 @@ BELOW 430px
         BELOW 415px
 ******************************/
 @media screen and (max-width: 26rem) {
-  .works {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-  }
-}
-
-/****************************
-        BELOW 390px
-******************************/
-@media screen and (max-width: 24rem) {
-  .home {
-    background-size: cover;
-    height: 90vh;
-  }
-
   .hero {
-    margin-top: 0;
+    margin-top: 0rem;
   }
 
-  .hero-content {
-    width: 100%;
+  .work .work-title h3 {
+    font-size: 2rem;
+    margin-left: 1rem;
   }
-
-  .hero p {
-    line-height: 1.5;
+  .works .work p {
+    font-size: 1.6rem;
   }
   .hero p span {
-    font-size: 3.6rem;
-  }
-
-  .about {
-    margin-top: 1.2rem;
-  }
-
-  .btn-resume,
-  .btn-hire {
-    display: inline-block;
-    margin-top: 100%;
+    font-size: 3rem;
   }
 }
 
@@ -171,20 +168,7 @@ BELOW 350px
 ******************************/
 @media screen and (max-width: 22rem) {
   .hero p span {
-    font-size: 3rem;
-  }
-}
-
-/****************************
-BELOW 280px
-******************************/
-@media screen and (max-width: 18rem) {
-  .hero {
-    margin-top: 10%;
-  }
-
-  .hero p span {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
 
   .about p {
@@ -200,35 +184,28 @@ BELOW 280px
 }
 
 /****************************
-BELOW 260px
+BELOW 280px
 ******************************/
-@media screen and (max-width: 17rem) {
-  .cta-btn {
-    display: flex;
-    flex-direction: column;
-    margin-top: 80%;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .btn-resume,
-  .btn-hire {
-    margin-top: 0;
+@media screen and (max-width: 18rem) {
+  .hero p span {
+    font-size: 2.4rem;
   }
 }
 
 /****************************
-BELOW 210px
+BELOW 270px
 ******************************/
-@media screen and (max-width: 14rem) {
-  html {
-    font-size: 35%;
+@media screen and (max-width: 17rem) {
+  .hero p span {
+    font-size: 2rem;
   }
-  .cta-btn {
-    margin-top: 100%;
-  }
+}
 
-  .portfolio {
-    overflow-x: scroll;
+/****************************
+BELOW 240px
+******************************/
+@media screen and (max-width: 15rem) {
+  .hero-content p span {
+    font-size: 2rem;
   }
 }
