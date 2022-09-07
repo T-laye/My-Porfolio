@@ -134,7 +134,7 @@ a .btn-resume {
   right: 0;
   width: 100%;
   height: 6rem;
-  padding-top: 0;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #0d0d0d8f;
   z-index: 100;
@@ -156,4 +156,8 @@ header div ion-icon {
 
 header div ion-icon:hover {
   color: burlywood;
+}
+
+.modal-icons {
+  display: none;
 }

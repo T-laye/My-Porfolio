@@ -32,208 +32,211 @@
     <title>Tubolayefa</title>
   </head>
   <body class="sticky">
-    <div class="home" id="home">
-      <header>
-        <!-- <div class="logo">T</div> -->
-        <nav class="nav-bar hiden">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <!-- <li><a href="#">Services</a></li> -->
-            <li>
-              <a href=""><button class="btn">Resume</button></a>
-            </li>
-          </ul>
-          <div class="modal-icons hidden">
-            <ion-icon size="large" name="menu"></ion-icon>
-            <!-- <ion-icon size="large" name="close"></ion-icon> -->
-          </div>
-        </nav>
-      </header>
-      <div class="hero">
-        <div class="hero-content">
-          <p>
-            Hi there, I'm<br />
-            <span class="input"></span> 
-          </p>
-          <div class="cta-btn">
-            <a href="#contact">
-              <button class="btn btn-hire">Hire Me</button>
-            </a>
-            <a href="">
-              <button class="btn btn-resume">Resume</button>
-            </a>
-            <div class="hero-img-container">
-              <img class="hero-img" src="./Assets/Images/hero-image.jpg" alt="">
+    <main class="">
+      <div class="home" id="home">
+        <header>
+          <!-- <div class="logo">T</div> -->
+          <nav class="nav-bar hiden">
+            <ul class="nav-items">
+              <li><a  class="nav-item"  href="#home">Home</a></li>
+              <li><a class="nav-item"  href="#about">About</a></li>
+              <li><a  class="nav-item" href="#portfolio">Portfolio</a></li>
+              <li><a class="nav-item"  href="#contact">Contact</a></li>
+              <!-- <li><a href="#">Services</a></li> -->
+              <li>
+                <a href=""><button class="btn">Resume</button></a>
+              </li>
+            </ul>
+            <div class="modal-icons">
+              <ion-icon class="open-modal" size="large" name="menu"></ion-icon>
+              <ion-icon class="close-modal hidden" size="large" name="close"></ion-icon>
+            </div>
+          </nav>
+        </header>
+        <div class="hero">
+          <div class="hero-content">
+            <p>
+              Hi there, I'm<br />
+              <span class="input"></span> 
+            </p>
+            <div class="cta-btn">
+              <a href="#contact">
+                <button class="btn btn-hire">Hire Me</button>
+              </a>
+              <a href="">
+                <button class="btn btn-resume">Resume</button>
+              </a>
+              <div class="hero-img-container">
+                <img class="hero-img" src="./Assets/Images/hero-image.jpg" alt="">
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <section class="about container" id="about">
-      <h2>ABOUT ME</h2>
-      <div>
-        <p>
-          My experience integrating with other team members including feedback
-          has indicated that I have an excellent reputation for  <span>solving problems</span>  
-          and <span>improving client satisfaction</span> and that me being too fun to work 
-          with. <br> <br> My mantra and what motivates me most with how I do my work is being <span>“Inqusitive and Unrelenting”</span>, which has guided me to be where I
-          am today.
-          <br /> <br>
-          I'm eager to contribute to the team’s success through <span>hard work,
-          attention to detail and organizational skills with a clear
-          understanding of tasks and training; motivated to grow, learn</span>  and
-          excel in all ramifications.
-        </p>
-      </div>
-    </section>
-    <section class="portfolio container" id="portfolio">
-      <h2>PORTFOLIO</h2>
-      <div class="works">
-        <!-- Pig Game -->
+      <section class="about container" id="about">
+        <h2>ABOUT ME</h2>
         <div>
-          <a href="#">
-            <div class="work">
-              <div class="work-title">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                  <h3>Pig Game</h3>
-              </div>
-              <p>
-                A two player guessing game. If any rolls a forbidden number, the player loses his turn and the unheld score becomes zero.   
-              </p>
-              <div>
-                <a class="checkout" href="#">
-                  <ion-icon class="checkout-icon" size="large" name="game-controller-outline"></ion-icon><span>Checkout</span>
-                </a>
-              </div>
-            </div>
-          </a>
+          <p>
+            My experience integrating with other team members including feedback
+            has indicated that I have an excellent reputation for  <span>solving problems</span>  
+            and <span>improving client satisfaction</span> and that me being too fun to work 
+            with. <br> <br> My mantra and what motivates me most with how I do my work is being <span>“Inqusitive and Unrelenting”</span>, which has guided me to be where I
+            am today.
+            <br /> <br>
+            I'm eager to contribute to the team’s success through <span>hard work,
+            attention to detail and organizational skills with a clear
+            understanding of tasks and training; motivated to grow, learn</span>  and
+            excel in all ramifications.
+          </p>
         </div>
-        <!-- To DO List -->
-        <div>
-          <a href="#">
-            <div class="work">
-              <div class="work-title">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                  <h3>To Do List</h3>
-              </div>
-              <p>
-                An app to create a list of errands and other tasks as a memory aid of what one needs or intends to accomplish.
-              </p>
-              <a class="checkout" href="#">
-                <ion-icon class="checkout-icon" size="large" name="list-outline"></ion-icon><span>Checkout</span>
-              </a>
-            </div>
-          </a>
-        </div>
-      
-        <!-- Precious Pot -->
-        <div>
-          <a href="#">
-            <div class="work">
-              <div class="work-title">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                  <h3>Precious Pots</h3>
-              </div>
-              <p>
-                A site for ordering and delivering food. 
-              </p>
-              <p></p>
-              <p></p>
-              <a class="checkout" href="#">
-                <ion-icon class="checkout-icon" size="large" name="fast-food-outline"></ion-icon><span>Checkout</span>
-              </a>
-           </div>
-          </a>
-        </div>
-  
-        <!-- Google Clone -->
-        <div>
-          <a href="#">
-            <div class="work">
-              <div class="work-title">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                  <h3>Google Clone</h3>
-              </div>
-              <p>
-                A clone of google home-page with dark mode feature.
-              </p>
-              <p></p>
-              <p></p>
-              <a class="checkout" href="#">
-                <ion-icon class="checkout-icon" size="large" name="logo-google"></ion-icon><span>Checkout</span>
-              </a>
-            </div>
-          </a>
-        </div>
-        <!-- African Recipe's -->
-        <div>
-          <a href="#">
-            <div class="work">
-              <div class="work-title">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                  <h3>Food Recipe</h3>
-              </div>
-              <p>
-                A website about Nigerian food recipes.
-              </p>
-              <p></p>
-              <p></p>
-              <a class="checkout" href="#">
-                  <ion-icon class="checkout-icon" size="large" name="fast-food-outline"></ion-icon><span>Checkout</span>
-                </a>
-            </div>
-          </a>
-        </div>
-        <!-- Jubilee Hotel -->
-        <div>
-          <a href="#">
-            <div class="work">
-              <div class="work-title">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                  <h3>Jubilee Hotel</h3>
+      </section>
+      <section class="portfolio container" id="portfolio">
+        <h2>PORTFOLIO</h2>
+        <div class="works">
+          <!-- Pig Game -->
+          <div>
+            <a href="#">
+              <div class="work">
+                <div class="work-title">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                    <h3>Pig Game</h3>
                 </div>
                 <p>
-                  An hotel website
+                  A two player guessing game. If any rolls a forbidden number, the player loses his turn and the unheld score becomes zero.   
+                </p>
+                <div>
+                  <a class="checkout" href="#">
+                    <ion-icon class="checkout-icon" size="large" name="game-controller-outline"></ion-icon><span>Checkout</span>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- To DO List -->
+          <div>
+            <a href="#">
+              <div class="work">
+                <div class="work-title">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                    <h3>To Do List</h3>
+                </div>
+                <p>
+                  An app to create a list of errands and other tasks as a memory aid of what one needs or intends to accomplish.
+                </p>
+                <a class="checkout" href="#">
+                  <ion-icon class="checkout-icon" size="large" name="list-outline"></ion-icon><span>Checkout</span>
+                </a>
+              </div>
+            </a>
+          </div>
+        
+          <!-- Precious Pot -->
+          <div>
+            <a href="#">
+              <div class="work">
+                <div class="work-title">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                    <h3>Precious Pots</h3>
+                </div>
+                <p>
+                  A site for ordering and delivering food. 
                 </p>
                 <p></p>
                 <p></p>
-                <p></p>
                 <a class="checkout" href="#">
-                  <ion-icon class="checkout-icon" size="large" name="bed-outline"></ion-icon><span>Checkout</span>
+                  <ion-icon class="checkout-icon" size="large" name="fast-food-outline"></ion-icon><span>Checkout</span>
                 </a>
             </div>
-          </a>
-        </div>
-      </section>
+            </a>
+          </div>
+    
+          <!-- Google Clone -->
+          <div>
+            <a href="#">
+              <div class="work">
+                <div class="work-title">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                    <h3>Google Clone</h3>
+                </div>
+                <p>
+                  A clone of google home-page with dark mode feature.
+                </p>
+                <p></p>
+                <p></p>
+                <a class="checkout" href="#">
+                  <ion-icon class="checkout-icon" size="large" name="logo-google"></ion-icon><span>Checkout</span>
+                </a>
+              </div>
+            </a>
+          </div>
+          <!-- African Recipe's -->
+          <div>
+            <a href="#">
+              <div class="work">
+                <div class="work-title">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                    <h3>Food Recipe</h3>
+                </div>
+                <p>
+                  A website about Nigerian food recipes.
+                </p>
+                <p></p>
+                <p></p>
+                <a class="checkout" href="#">
+                    <ion-icon class="checkout-icon" size="large" name="fast-food-outline"></ion-icon><span>Checkout</span>
+                  </a>
+              </div>
+            </a>
+          </div>
+          <!-- Jubilee Hotel -->
+          <div>
+            <a href="#">
+              <div class="work">
+                <div class="work-title">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                    <h3>Jubilee Hotel</h3>
+                  </div>
+                  <p>
+                    An hotel website
+                  </p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <a class="checkout" href="#">
+                    <ion-icon class="checkout-icon" size="large" name="bed-outline"></ion-icon><span>Checkout</span>
+                  </a>
+              </div>
+            </a>
+          </div>
+        </section>
 
-    <section class="contact contain" id="contact">
-        <div class="icons">
-          <a href="">
-            <ion-icon size="large" name="logo-github"></ion-icon>
+      <section class="contact contain" id="contact">
+          <div class="icons">
+            <a href="">
+              <ion-icon size="large" name="logo-github"></ion-icon>
+            </a>
+            <a href="">
+              <ion-icon size="large" name="logo-whatsapp"></ion-icon>
+            </a>
+            <a href="">
+              <ion-icon size="large" name="mail-outline"></ion-icon>
+            </a>
+            <a href="">
+              <ion-icon size="large" name="logo-twitter"></ion-icon>
+            </a>
+            <a href="">
+              <ion-icon size="large" name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="">
+              <ion-icon size="large" name="logo-facebook"></ion-icon>
+            </a>
+          </div>
+          <a href="#">
+            <div class="footname"><ion-icon size="large" name="git-branch-outline"></ion-icon>T_laye</div>
           </a>
-          <a href="">
-            <ion-icon size="large" name="logo-whatsapp"></ion-icon>
-          </a>
-          <a href="">
-            <ion-icon size="large" name="mail-outline"></ion-icon>
-          </a>
-          <a href="">
-            <ion-icon size="large" name="logo-twitter"></ion-icon>
-          </a>
-          <a href="">
-            <ion-icon size="large" name="logo-linkedin"></ion-icon>
-          </a>
-          <a href="">
-            <ion-icon size="large" name="logo-facebook"></ion-icon>
-          </a>
-        </div>
-        <a href="#">
-          <div class="footname"><ion-icon size="large" name="git-branch-outline"></ion-icon>T_laye</div>
-        </a>
-    </section>
+      </section>
+    </main> 
     <script src="./Assets/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     ;

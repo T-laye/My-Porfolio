@@ -54,3 +54,31 @@ allLinks.forEach(function (link) {
       headerEl.classList.toggle("nav-open");
   });
 });
+
+////////////////////////////////////////////
+///////Mobile Navigation Bar///////////////
+
+const openModal = document.querySelector(".open-modal");
+const closeModal = document.querySelector(".close-modal");
+const navBar = document.querySelector(".nav-items");
+const navItems = document.querySelectorAll(".nav-item");
+
+openModal.addEventListener("click", () => {
+  navBar.classList.add("show-nav");
+  openModal.classList.add("hidden");
+  closeModal.classList.remove("hidden");
+});
+
+closeModal.addEventListener("click", () => {
+  navBar.classList.remove("show-nav");
+  openModal.classList.remove("hidden");
+  closeModal.classList.add("hidden");
+});
+
+navItems.forEach((navItem) =>
+  navItem.addEventListener("click", () => {
+    navBar.classList.remove("show-nav");
+    openModal.classList.remove("hidden");
+    closeModal.classList.add("hidden");
+  })
+);
