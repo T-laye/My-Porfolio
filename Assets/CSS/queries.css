@@ -25,15 +25,56 @@
     display: inline-block;
   }
 
+  .modal-icons {
+    /* position: relative; */
+    margin-right: -2rem;
+    margin-top: -2rem;
+    z-index: 2;
+    position: fixed;
+  }
+
+  header {
+    background-color: none;
+  }
+
   nav ul {
+    background-color: #0d0d0d8f;
+    backdrop-filter: blur(10px);
+    /* display: none; */
+    padding-top: 5rem;
+    padding-left: 2rem;
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    position: fixed;
+    right: 0rem;
+    top: 0rem;
+    justify-content: start;
+    align-items: start;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  main {
+    overflow-x: hidden;
+  }
+
+  nav ul li .btn {
     display: none;
   }
+
   .hero-content {
     margin-top: 2rem;
   }
 
-  .hidden {
+  .modal-icons {
     display: block;
+  }
+
+  .show-nav {
+    transform: translateX(0);
   }
 }
 
