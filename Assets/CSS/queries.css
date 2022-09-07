@@ -34,11 +34,11 @@
   }
 
   header {
-    background-color: none;
+    /* background-color: none; */
   }
 
   nav ul {
-    background-color: #0d0d0d8f;
+    background-color: #0d0d0de1;
     backdrop-filter: blur(10px);
     /* display: none; */
     padding-top: 5rem;
