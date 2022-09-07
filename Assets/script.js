@@ -29,12 +29,12 @@ obs.observe(sectionHeroEl);
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 
-const allLinks = document.querySelectorAll("a:link");
+const navLinks = document.querySelectorAll(".nav-link");
 
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
+navLinks.forEach(function (navlink) {
+  navlink.addEventListener("click", function (e) {
     e.preventDefault();
-    const href = link.getAttribute("href");
+    const href = navlink.getAttribute("href");
 
     // Scroll back to top
     if (href === "#")
@@ -48,10 +48,6 @@ allLinks.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
-
-    // Close mobile naviagtion
-    if (link.classList.contains("nav-links"))
-      headerEl.classList.toggle("nav-open");
   });
 });
 
