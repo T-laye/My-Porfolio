@@ -20,9 +20,11 @@
     gap: 2rem;
   }
 
-  .btn-resume,
-  .btn-hire {
+  a .btn-resume,
+  a .btn-hire {
     display: inline-block;
+    font-weight: 600;
+    font-size: 2.4rem;
   }
 
   .modal-icons {
@@ -84,12 +86,12 @@
     gap: 2rem;
   }
 
-  a .btn-resume,
+  /* a .btn-resume,
   a .btn-hire {
     display: inline-block;
     font-weight: 600;
     font-size: 2.4rem;
-  }
+  } */
 
   .hero p span {
     font-size: 4.6rem;
